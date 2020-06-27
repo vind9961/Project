@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap-social/bootstrap-social.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Project</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-light" id="nav">
+		<div class="container">
+			<a href="#" class="navbar-brand mr-5"><img src="img/logo.png" height="50" width="55"></a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="input-group">
+				<input type="text" class="form-control" name="search" placeholder="search Medicine">
+				<div class="input-group-append">
+					<button class="btn btn-sm btn-info"><span class="fa fa-search"></span></button>
+				</div>
+	        </div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item ml-2"><a href="" data-toggle="modal" data-target="#cartModal" class="nav-link">
+						<span class="fa fa-shopping-cart fa-lg"></span> Cart</a></li>
+					<li class="nav-item ml-2"><a href="" data-target="#SignUpModal" data-toggle="modal" class="nav-link">
+						<span class="fa fa-user-plus fa-lg"></span> Sign Up</a></li>
+					<li class="nav-item ml-2"><a href="" data-target="#loginModal" data-toggle="modal" class="nav-link"><span class="fa fa-sign-in fa-lg"></span> Sign In</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<header>
+       <div class="container">
+       	    <div class="row">
+				<a class="btn btn-success btn-sm text-center col-sm-3 col-12" href=""> Call To Order <br><span class="fa fa-phone fa-lg"></span> 1800-180-255</a> <hr>
+				<div class=" my-2 col-sm-9 col-12 row">
+					<a class="col-sm-3 my-1" href="madicalStore.html">Medical store</a>
+					<a class="col-sm-3 my-1" href="#">Health Product</a>
+					<a class="col-sm-3 my-1" href="#">Doctor Consultation</a>
+
+					<a class="col-sm-3 my-1 dropdown-toggle" href="#" data-toggle="dropdown" id="MoreButton">More</a>
+					<div class="dropdown-menu" aria-labelledby="MoreButton">
+						<a href="#" class="dropdown-item">Find Doctor</a>
+						<a href="#" class="dropdown-item">For Doctor</a>
+						<a href="#" class="dropdown-item">Offers</a>
+						<a href="#" class="dropdown-item">Blog</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			
+			<div class="row">
+				<div class="col-sm-3 my-auto">
+					<h5 class="slogan">Without health, Life is almost dead! A healthy body holds a Healthy Soul & mind!</h5>
+				</div>
+				<div class="col-sm-9 mb-3">
+					<div class="carousel slide" data-ride="carousel" id="carousel">
+						<ol class="carousel-indicators">
+	                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	                        <li data-target="#carousel" data-slide-to="1"></li>
+	                        <li data-target="#carousel" data-slide-to="2"></li>
+	                    </ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="#"><img src="img/slide1.jpg" class="d-block img-fluid "></a>
+							</div>
+							<div class="carousel-item">
+								<a href="#"><img src="img/slide2.jpg" class="d-block img-fluid "></a>
+							</div>
+							<div class="carousel-item">
+								<a href="#"><img src="img/slide3.jpg" class="d-block img-fluid"></a>
+							</div>
+						</div>
+					</div>
+                    <a href="#carousel" class="carousel-control-prev" data-slide="prev" role="button"><span class="carousel-control-prev-icon"></span></a>
+                    <a href="#carousel" class="carousel-control-next" data-slide="next" role="button"><span class="carousel-control-next-icon"></span></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="modal fade" role="dialog" id="cartModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"> Cart</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Your Shopping Cart is empty please add some item..</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Sign In</h4>
+                    <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="email">Email address</label>
+                                <input type="email" name="email" class="form-control form-control-sm mr-1" id="email" placeholder="email@domain">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="password">Passoword</label>
+                                <input type="password" name="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-secondry btn-sm ml-auto" data-dismiss="modal" type="button">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="SignUpModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Sign Up</h4>
+                    <button  type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-3">
+                                <label for="email">Email address</label>
+                                <input type="email" name="email" class="form-control form-control-sm mr-1" id="email" placeholder="email@domain">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <label for="password">Passoword</label>
+                                <input type="password" name="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <label for="password">Confirm Passoword</label>
+                                <input type="password" name="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-secondry btn-sm ml-auto" data-dismiss="modal" type="button">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="advance">
+		<div class="container">
+			<div class="row">
+				<p class="col-sm-3 mt-2"><span class="fa fa-certificate"></span> Genuine Medicines</p>
+				<p class="col-sm-3 mt-2"><span class="fa fa-truck"></span> Timely Delivery</p>
+				<p class="col-sm-3 mt-2"><span class="fa fa-exchange"></span> Easy Return Refund</p>
+				<p class="col-sm-3 mt-2"><span class="fa fa-credit-card"></span> Secure Payment</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="BookMedicine" id="BookMedicine">
+		<div class="container p-4 ">
+			<div class="row">
+				<h2 class="text-center col-sm-12">Book Medicine</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 my-4">
+					<p class="text-center">Need Medicines on regular basis ? </p>
+					<a href="" class="btn btn-danger btn-block">Subscribe Now</a>
+				</div>
+				<div class="col-sm-4 my-4">
+					<p class="text-center">Have a prescription</p>
+					<a href="" class="btn btn-success btn-block">Upload</a>
+				</div>
+				<div class="col-sm-4 my-4">
+					<p class="text-center">Don't have prescription</p>
+					<a href="" class="btn btn-info btn-block">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="labPackage p-4">
+		<div class="container">
+			<h4>Popular Lab Test</h4>
+			<div class="row ">
+				<div class="col-sm-4 my-3">
+					<div class="card">
+						<img src="img/family1.jpg" class="card-img-top">
+						<div class="card-body">
+							<strong class="card-title">Basic Health Checkup</strong>
+							<p class="card-text">Include 47 parmeter</p>
+							<p class="text-right text-danger realPrice"><span class="fa fa-rupee"></span> 1549</p>
+							<p class="text-right text-success">70% Off <br>
+							 <span class="fa fa-rupee"></span> 599 <br></p>
+							<div class="text-center"><button class="btn btn-success">Book Now</button></div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-4 my-3">
+					<div class="card">
+						<img src="img/family2.jpg" class="card-img-top">
+						<div class="card-body">
+							<strong class="card-title">Advance Full Body Checkup</strong>
+							<p class="card-text">Include 72 parmeter</p>
+							<p class="text-right text-danger realPrice"><span class="fa fa-rupee"></span> 2549</p>
+							<p class="text-right text-success">70% Off <br>
+							 <span class="fa fa-rupee"></span> 799<br></p>
+
+							<div class="text-center"><button class="btn btn-success">Book Now</button></div>
+
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-sm-4 my-3">
+					<div class="card">
+						<img src="img/family3.jpg" class="card-img-top">
+						<div class="card-body">
+							<strong class="card-title">Comprehensive Full Body Checkup</strong>
+							<p class="card-text">Include 47 parmeter</p>
+							<p class="text-right text-danger realPrice"><span class="fa fa-rupee"></span> 3549</p>
+							<p class="text-right text-success">67% Off <br>
+							 <span class="fa fa-rupee"></span> 1149 <br></p>
+							<div class="text-center"><button class="btn btn-success">Book Now</button></div>
+							
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer p-4">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-sm-3">
+					<h4>Whatsapp Us</h4>
+					<a href=""><i class="fa fa-whatsapp"></i> 9455147882</a>
+				</div>
+				<div class="col-sm-3">
+					<h4>Follow us on</h4>
+					<a href="#" class="btn btn-twitter btn-circle"><i class="fa fa-twitter"></i> </a> <a href="" class="btn btn-facebook btn-circle ml-4"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<h4>Subscribe newsletter</h4>
+					<div class="input-group input-group-sm">
+						<input class="form-control" type="email" name="email" placeholder="email@domain">
+						<button class="btn btn-success input-group-append">Subscribe</button>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-sm-3">
+					<h4>Give a missed call to Download app</h4>
+					<a href="#"><span class="fa fa-phone"></span> 9455887482</a>
+				</div>
+				<div class="col-sm-3">
+					<h4>Download our app</h4>
+					<a href="#" class="btn "><i class="fa fa-play fa-lg"></i></a>
+					<a href="#" class="btn "><i class="fa fa-android fa-lg"></i></a>
+				</div>
+				<div class="col-sm-3"></div>
+			</div><hr>
+			<div class="row mb-4">
+				<div class="col-sm-3">
+					<h4>For Customers</h4>
+					<a href="#BookMedicine">Medical Store</a><br>
+					<a href="#">Health Products</a><br>
+					<a href="#">Doctor consultation</a><br>
+					<a href="#">lab test</a><br>
+					<a href="#">Find doctor</a><br>
+					<a href="#">Health article</a><br>
+					<a href="#">Offers/coupons</a><br>
+				</div>
+				<div class="col-sm-3">
+					<h4>For our doctors</h4>
+					<a href="">For doctor</a><br>
+					<a href="">Book a demo</a><br><br>
+					<h4>Partner with us</h4>
+					<a href="">Affilates</a><br>
+					<a href="">Franchise</a><br>
+					<a href="">Sell with us</a>
+				</div>
+				<div class="col-sm-3">
+					<h4>Help</h4>
+					<a href="">FAQ</a><br>
+					<a href="">Return policy</a><br>
+					<a href="">Terms and condition</a><br>
+					<a href="">Privacy policy</a><br>
+				</div>
+				<div class="col-sm-3">
+					<h4>Health Care</h4>
+					<a href="">Blogs</a><br>
+					<a href="">Carrers</a><br>
+					<a href="">Life at Medilife</a><br>
+					<a href="">Contact Us</a><br>
+					<a href="">About Us</a><br>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	
+
+
+
+	<!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

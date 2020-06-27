@@ -1,0 +1,54 @@
+
+.input-group{
+	width: 400px;
+}
+
+
+.slogan{
+	font-style: italic;
+}
+#nav{
+	background-color: #66ccff;
+}
+header{
+	background-color:#e6f7ff;
+
+
+}
+hr{
+	
+	background-color: #0000e6;
+}
+.advance{
+	background-color: #b3e7ff;
+	
+}
+.medicalUpload{
+	background-color: #9999ff;
+}
+.labPackage{
+background-color: #99ccff;
+}
+.card-body{
+	background-color: #cce6ff;
+}
+.breadcrumb{
+	margin:0px;
+	background-color: #ccccff;
+}
+
+.BookMedicine{
+	background-color: #33beff
+}
+.medicalPrescription{
+	background-color:white;
+}
+.realPrice{
+	text-decoration: line-through;
+}
+.carousel-item{
+	height: 50%;
+}
+.footer{
+	background-color: #ccccff;
+}
